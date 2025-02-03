@@ -1,4 +1,4 @@
-# README - Adult Census Income Dataset Processing
+# Adult Census Income Dataset Prediction
 
 ## Overview
 This project focuses on cleaning, preparing, and analyzing the Adult Census Income dataset. The dataset is preprocessed to ensure quality and readiness for machine learning or statistical analysis. The key steps include data cleaning, feature engineering, exploratory data analysis (EDA), and final dataset preparation.
