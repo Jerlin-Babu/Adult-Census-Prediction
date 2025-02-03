@@ -1,61 +1,38 @@
-# Adult Census Income Dataset Prediction
+# Adult Income Prediction from Census Data
 
-## Overview
-This project focuses on cleaning, preparing, and analyzing the Adult Census Income dataset. The dataset is preprocessed to ensure quality and readiness for machine learning or statistical analysis. The key steps include data cleaning, feature engineering, exploratory data analysis (EDA), and final dataset preparation.
+This project focuses on processing and analyzing the Adult Census Income dataset to predict income levels. It involves data cleaning, feature engineering, exploratory data analysis (EDA), and dataset preparation for machine learning models.
 
-## Steps Involved
+## Features
+- Data cleaning and handling of missing values
+- Feature engineering for better model performance
+- Exploratory Data Analysis (EDA) with visualizations
+- Final dataset preparation for machine learning
 
-### 1. Data Cleaning
-- Replaced missing values in `occupation` and `native.country` with their respective mode values.
-- Replaced `?` values with `NaN` and handled them appropriately.
-- Removed duplicate rows to maintain dataset integrity.
+## Tools & Technologies
+- Python, Pandas, NumPy
+- Seaborn, Matplotlib for visualization
+- Scikit-learn for preprocessing and model preparation
 
-### 2. Feature Engineering
-- Grouped education levels into broader categories:
-  - "dropout"
-  - "HighGrad"
-  - "CommunityCollege"
-  - "Bachelors"
-  - "Masters"
-  - "Doctorate"
-- Simplified marital status into fewer meaningful categories.
-- Converted categorical variables into numerical form using one-hot encoding (`pd.get_dummies()`).
+## How It Works
+1. Load and preprocess the Adult Census Income dataset.
+2. Handle missing and inconsistent data.
+3. Perform feature engineering to enhance dataset quality.
+4. Analyze data trends and correlations using EDA.
+5. Prepare the final dataset for machine learning applications.
 
-### 3. Exploratory Data Analysis (EDA)
-- Visualized income distribution across various features using `sns.countplot()`.
-- Generated a correlation heatmap using `sns.heatmap(df.corr(), annot=True)`.
-- Analyzed distributions of age and education.
-- Evaluated mean income for different groups (e.g., workclass, sex, education levels).
-
-### 4. Final Dataset Preparation
-- Dropped irrelevant or redundant columns:
-  - `fnlwgt`
-  - `capital.gain`
-  - `capital.loss`
-  - `education.num`
-- Merged the transformed categorical data with the numerical dataset to form the final version.
+## Setup
+1. Install required dependencies:
+   ```bash
+   pip install pandas numpy seaborn matplotlib scikit-learn
+   ```
+2. Download the Adult Census Income dataset.
+3. Run the preprocessing script to generate a cleaned dataset.
 
 ## Next Steps
-- Perform feature selection to determine the most significant predictors for income classification.
-- Train machine learning models to predict income levels.
-- Optimize and tune models for better performance.
-- Further explore additional feature transformations if necessary.
+- Train machine learning models for income classification.
+- Perform feature selection to optimize model performance.
+- Experiment with different algorithms for better accuracy.
 
-## Requirements
-To execute the preprocessing steps, ensure the following Python libraries are installed:
-
-```bash
-pip install pandas numpy seaborn matplotlib
-```
-
-## Usage
-Run the preprocessing script to clean and prepare the dataset:
-```python
-python preprocess.py
-```
-
-This will generate a cleaned and transformed dataset ready for further analysis or model training.
-
----
-This README provides an overview of the dataset preparation workflow, ensuring a structured approach to handling the Adult Census dataset.
+## License
+This project is for educational and research purposes only.
 
